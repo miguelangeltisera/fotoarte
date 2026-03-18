@@ -10,7 +10,7 @@ export default function PhotographerCard({ photographer }: Props) {
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
       <img
-        src={photographer.imageUrl}
+        src={`https://picsum.photos/seed/${photographer.name}/400/300`}
         alt={photographer.name}
         className="w-full h-48 object-cover"
         referrerPolicy="no-referrer"
