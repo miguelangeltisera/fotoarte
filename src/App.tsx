@@ -13,6 +13,9 @@ export default function App() {
             <PhotographerCard key={p.name} photographer={p} />
           ))}
         </div>
+        <footer className="mt-16 text-center text-gray-600">
+          <p>Creado por Miguelángel Tisera</p>
+        </footer>
       </div>
     </div>
   );
