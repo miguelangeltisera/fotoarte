@@ -10,7 +10,7 @@ export default function PhotographerCard({ photographer }: Props) {
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
       <img
-        src={`https://picsum.photos/seed/${seed}/400/300`}
+        src={photographer.imageUrl}
         alt={photographer.name}
         className="w-full h-48 object-cover"
         referrerPolicy="no-referrer"
@@ -23,6 +23,7 @@ export default function PhotographerCard({ photographer }: Props) {
         <div className="bg-gray-50 p-3 rounded-lg mt-auto">
           <p className="text-xs font-semibold text-gray-500 uppercase mb-1">Análisis experto:</p>
           <p className="text-sm text-gray-800 italic">{photographer.expertCommentary}</p>
+          <p className="text-xs text-gray-400 mt-2">Crédito: {photographer.imageCredit} | Fuente: {photographer.imageSource}</p>
         </div>
       </div>
     </div>
